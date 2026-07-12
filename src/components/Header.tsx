@@ -117,11 +117,8 @@ export default function Header() {
       <motion.header
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        style={{
-          paddingTop: "env(safe-area-inset-top)",
-        }}
-        className={`fixed inset-x-0 top-0 z-50 transition-all duration-700 ${
+        transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
           scrolled ? "glass-panel py-3 shadow-luxury" : "bg-transparent py-5"
         }`}
       >
