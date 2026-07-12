@@ -1,35 +1,72 @@
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { useI18n } from '../hooks/useI18n';
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { useI18n } from "../hooks/useI18n";
 
-const NAV_SECTIONS = ['services', 'team', 'portfolio', 'pricing', 'contact'] as const;
+const NAV_SECTIONS = [
+  "services",
+  "team",
+  "portfolio",
+  "pricing",
+  "contact",
+] as const;
 
 // Burger → X morphing SVG
 function BurgerIcon({ open }: { open: boolean }) {
-  const t = { duration: 0.38, ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number] };
-  const state = open ? 'open' : 'closed';
+  const t = {
+    duration: 0.38,
+    ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number],
+  };
+  const state = open ? "open" : "closed";
 
   return (
-    <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true" overflow="visible">
+    <svg
+      width="22"
+      height="16"
+      viewBox="0 0 22 16"
+      fill="none"
+      aria-hidden="true"
+      overflow="visible"
+    >
       <motion.rect
-        x="0" y="0" width="22" height="2" rx="1" fill="currentColor"
+        x="0"
+        y="0"
+        width="22"
+        height="2"
+        rx="1"
+        fill="currentColor"
         variants={{ closed: { rotate: 0, y: 0 }, open: { rotate: 45, y: 7 } }}
-        animate={state} initial={false}
-        style={{ originX: '11px', originY: '1px' }}
+        animate={state}
+        initial={false}
+        style={{ originX: "11px", originY: "1px" }}
         transition={t}
       />
       <motion.rect
-        x="0" y="7" width="22" height="2" rx="1" fill="currentColor"
-        variants={{ closed: { opacity: 1, scaleX: 1 }, open: { opacity: 0, scaleX: 0 } }}
-        animate={state} initial={false}
-        style={{ originX: '11px', originY: '8px' }}
+        x="0"
+        y="7"
+        width="22"
+        height="2"
+        rx="1"
+        fill="currentColor"
+        variants={{
+          closed: { opacity: 1, scaleX: 1 },
+          open: { opacity: 0, scaleX: 0 },
+        }}
+        animate={state}
+        initial={false}
+        style={{ originX: "11px", originY: "8px" }}
         transition={t}
       />
       <motion.rect
-        x="0" y="14" width="22" height="2" rx="1" fill="currentColor"
+        x="0"
+        y="14"
+        width="22"
+        height="2"
+        rx="1"
+        fill="currentColor"
         variants={{ closed: { rotate: 0, y: 0 }, open: { rotate: -45, y: -7 } }}
-        animate={state} initial={false}
-        style={{ originX: '11px', originY: '15px' }}
+        animate={state}
+        initial={false}
+        style={{ originX: "11px", originY: "15px" }}
         transition={t}
       />
     </svg>
@@ -44,29 +81,34 @@ export default function Header() {
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 60);
-    window.addEventListener('scroll', handler, { passive: true });
-    return () => window.removeEventListener('scroll', handler);
+    window.addEventListener("scroll", handler, { passive: true });
+    return () => window.removeEventListener("scroll", handler);
   }, []);
 
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? 'hidden' : '';
-    return () => { document.body.style.overflow = ''; };
+    document.body.style.overflow = menuOpen ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
   }, [menuOpen]);
 
   const scrollTo = (id: string) => {
     setMenuOpen(false);
-    setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }), 350);
+    setTimeout(
+      () => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" }),
+      350,
+    );
   };
 
   const langs = [
-    { code: 'en', label: 'EN', full: 'English' },
-    { code: 'uk', label: 'УКР', full: 'Українська' },
-    { code: 'pl', label: 'PL', full: 'Polski' },
+    { code: "en", label: "EN", full: "English" },
+    { code: "uk", label: "УКР", full: "Українська" },
+    { code: "pl", label: "PL", full: "Polski" },
   ] as const;
 
   // Burger sits at top-5 right-6 with p-2, icon 22×16
   // Circle origin: from right = 24+8+11=43px → calc(100%-43px), from top = 20+8+8=36px
-  const CLIP_ORIGIN = 'calc(100% - 43px) 36px';
+  const CLIP_ORIGIN = "calc(100% - 43px) 36px";
 
   return (
     <>
@@ -75,25 +117,36 @@ export default function Header() {
       <motion.header
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
-          scrolled ? 'glass-panel py-3 shadow-luxury' : 'bg-transparent py-5'
+        transition={{ duration: 0.8 }}
+        style={{
+          paddingTop: "env(safe-area-inset-top)",
+        }}
+        className={`fixed inset-x-0 top-0 z-50 transition-all duration-700 ${
+          scrolled ? "glass-panel py-3 shadow-luxury" : "bg-transparent py-5"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
           <button
-            onClick={() => document.getElementById('hero')?.scrollIntoView({ behavior: 'smooth' })}
+            onClick={() =>
+              document
+                .getElementById("hero")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
             className="flex flex-col leading-none"
           >
-            <span className={`font-vibes text-3xl transition-colors duration-500 ${
-              scrolled ? 'text-champagne-500' : 'text-champagne-300'
-            }`}>
+            <span
+              className={`font-vibes text-3xl transition-colors duration-500 ${
+                scrolled ? "text-champagne-500" : "text-champagne-300"
+              }`}
+            >
               Lumière
             </span>
-            <span className={`font-manrope text-[9px] tracking-widest3 uppercase transition-colors duration-500 ${
-              scrolled ? 'text-charcoal-400' : 'text-ivory-300'
-            }`}>
+            <span
+              className={`font-manrope text-[9px] tracking-widest3 uppercase transition-colors duration-500 ${
+                scrolled ? "text-charcoal-400" : "text-ivory-300"
+              }`}
+            >
               Beauty Studio
             </span>
           </button>
@@ -105,7 +158,9 @@ export default function Header() {
                 key={section}
                 onClick={() => scrollTo(section)}
                 className={`font-manrope text-xs tracking-widest uppercase transition-all duration-300 relative group ${
-                  scrolled ? 'text-charcoal-500 hover:text-charcoal-800' : 'text-ivory-300 hover:text-white'
+                  scrolled
+                    ? "text-charcoal-500 hover:text-charcoal-800"
+                    : "text-ivory-300 hover:text-white"
                 }`}
               >
                 {t(`nav.${section}`)}
@@ -121,10 +176,12 @@ export default function Header() {
               <button
                 onClick={() => setLangOpen(!langOpen)}
                 className={`font-manrope text-xs tracking-widest uppercase flex items-center gap-1.5 transition-colors duration-300 ${
-                  scrolled ? 'text-charcoal-400 hover:text-champagne-500' : 'text-ivory-300 hover:text-white'
+                  scrolled
+                    ? "text-charcoal-400 hover:text-champagne-500"
+                    : "text-ivory-300 hover:text-white"
                 }`}
               >
-                {langs.find(l => l.code === lang)?.label}
+                {langs.find((l) => l.code === lang)?.label}
                 <motion.span
                   animate={{ rotate: langOpen ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
@@ -145,15 +202,20 @@ export default function Header() {
                     {langs.map((l) => (
                       <button
                         key={l.code}
-                        onClick={() => { setLang(l.code); setLangOpen(false); }}
+                        onClick={() => {
+                          setLang(l.code);
+                          setLangOpen(false);
+                        }}
                         className={`w-full text-left px-5 py-3 font-manrope text-xs tracking-widest uppercase transition-colors duration-200 flex items-center justify-between ${
                           lang === l.code
-                            ? 'text-champagne-600 bg-champagne-50'
-                            : 'text-charcoal-500 hover:text-charcoal-800 hover:bg-ivory-100'
+                            ? "text-champagne-600 bg-champagne-50"
+                            : "text-charcoal-500 hover:text-charcoal-800 hover:bg-ivory-100"
                         }`}
                       >
                         <span>{l.full}</span>
-                        {lang === l.code && <span className="w-1 h-1 rounded-full bg-champagne-500" />}
+                        {lang === l.code && (
+                          <span className="w-1 h-1 rounded-full bg-champagne-500" />
+                        )}
                       </button>
                     ))}
                   </motion.div>
@@ -162,8 +224,11 @@ export default function Header() {
             </div>
 
             {/* Book CTA */}
-            <button onClick={() => scrollTo('booking')} className="hidden md:flex btn-primary text-xs">
-              {t('nav.book')}
+            <button
+              onClick={() => scrollTo("booking")}
+              className="hidden md:flex btn-primary text-xs"
+            >
+              {t("nav.book")}
             </button>
 
             {/* Mobile spacer — matches burger button width so logo stays left-aligned */}
@@ -177,9 +242,13 @@ export default function Header() {
       <button
         onClick={() => setMenuOpen(!menuOpen)}
         className={`fixed top-5 right-6 z-[200] lg:hidden p-2 transition-colors duration-300 ${
-          menuOpen ? 'text-white' : scrolled ? 'text-charcoal-700' : 'text-white'
+          menuOpen
+            ? "text-white"
+            : scrolled
+              ? "text-charcoal-700"
+              : "text-white"
         }`}
-        aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+        aria-label={menuOpen ? "Close menu" : "Open menu"}
       >
         <BurgerIcon open={menuOpen} />
       </button>
@@ -197,7 +266,6 @@ export default function Header() {
           >
             {/* ── Content anchored to the BOTTOM ── */}
             <div className="flex flex-col justify-end h-full px-10 sm:px-14 pb-14 sm:pb-20 gap-4">
-
               {/* Nav links */}
               <nav className="flex flex-col gap-3">
                 {NAV_SECTIONS.map((section, i) => (
@@ -218,7 +286,7 @@ export default function Header() {
               <motion.div
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
-                transition={{ delay: 0.55, duration: 0.4, ease: 'easeOut' }}
+                transition={{ delay: 0.55, duration: 0.4, ease: "easeOut" }}
                 className="origin-left divider-gold opacity-30 my-1"
               />
 
@@ -229,14 +297,14 @@ export default function Header() {
                 transition={{ delay: 0.62, duration: 0.35 }}
                 className="flex items-center gap-4 flex-wrap"
               >
-                {(['en', 'uk', 'pl'] as const).map((l) => (
+                {(["en", "uk", "pl"] as const).map((l) => (
                   <button
                     key={l}
                     onClick={() => setLang(l)}
                     className={`font-manrope text-xs tracking-widest uppercase px-3 py-1.5 border transition-colors duration-300 ${
                       lang === l
-                        ? 'border-champagne-500 text-champagne-400'
-                        : 'border-charcoal-600 text-charcoal-400 hover:border-charcoal-400'
+                        ? "border-champagne-500 text-champagne-400"
+                        : "border-charcoal-600 text-charcoal-400 hover:border-charcoal-400"
                     }`}
                   >
                     {l.toUpperCase()}
@@ -244,24 +312,31 @@ export default function Header() {
                 ))}
 
                 <button
-                  onClick={() => scrollTo('booking')}
+                  onClick={() => scrollTo("booking")}
                   className="btn-primary text-xs ml-2"
                 >
-                  {t('nav.book')}
+                  {t("nav.book")}
                 </button>
               </motion.div>
             </div>
 
             {/* Watermark */}
             <div className="absolute top-10 left-10 opacity-[0.04] pointer-events-none select-none">
-              <span className="font-vibes text-8xl text-champagne-200">Lumière</span>
+              <span className="font-vibes text-8xl text-champagne-200">
+                Lumière
+              </span>
             </div>
           </motion.div>
         )}
       </AnimatePresence>
 
       {/* Backdrop for lang dropdown */}
-      {langOpen && <div className="fixed inset-0 z-30" onClick={() => setLangOpen(false)} />}
+      {langOpen && (
+        <div
+          className="fixed inset-0 z-30"
+          onClick={() => setLangOpen(false)}
+        />
+      )}
     </>
   );
 }
