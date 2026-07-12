@@ -66,7 +66,7 @@ function BurgerIcon({ open }: { open: boolean }) {
         variants={{ closed: { rotate: 0, y: 0 }, open: { rotate: -45, y: -7 } }}
         animate={state}
         initial={false}
-        style={{ originX: "11px", originY: "15px" }}
+        style={{ originX: "11px", originY: "1px" }}
         transition={t}
       />
     </svg>
@@ -118,8 +118,8 @@ export default function Header() {
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 ${
-          scrolled ? "glass-panel py-3 shadow-luxury" : "bg-transparent py-5"
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-700 py-5 ${
+          scrolled ? "glass-panel shadow-luxury" : "bg-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">

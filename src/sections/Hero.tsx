@@ -19,11 +19,7 @@ export default function Hero() {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
   return (
-    <section
-      id="hero"
-      ref={ref}
-      className="relative min-h-screen min-h-dvh overflow-hidden"
-    >
+    <section id="hero" ref={ref} className="relative min-h-dvh overflow-hidden">
       {/* Background */}
       <motion.div
         style={{ y, scale }}
