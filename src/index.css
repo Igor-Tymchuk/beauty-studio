@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-ivory-50 text-charcoal-700 font-manrope;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: #c0203840;
+    color: #1c1c1a;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #faf8f2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #c02038;
+    border-radius: 2px;
+  }
+}
+
+@layer components {
+  .gold-text {
+    background: linear-gradient(
+      135deg,
+      #740e1f 0%,
+      #c02038 35%,
+      #d94d60 55%,
+      #e8808f 70%,
+      #c02038 85%,
+      #740e1f 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-panel {
+    background: rgba(253, 252, 248, 0.6);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    /* border: 1px solid rgba(192, 32, 56, 0.12); */
+  }
+
+  .glass-panel-dark {
+    background: rgba(28, 28, 26, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(192, 32, 56, 0.15);
+  }
+
+  .btn-primary {
+    @apply relative overflow-hidden inline-flex items-center gap-2 px-8 py-3.5 font-manrope font-medium tracking-widest text-xs uppercase text-white transition-all duration-500;
+    background: linear-gradient(135deg, #9b152b 0%, #c02038 50%, #9b152b 100%);
+    background-size: 200% auto;
+  }
+
+  .btn-primary:hover {
+    background-position: right center;
+    box-shadow: 0 8px 30px rgba(192, 32, 56, 0.45);
+  }
+
+  .btn-ghost {
+    @apply relative inline-flex items-center gap-2 px-8 py-3.5 font-manrope font-medium tracking-widest text-xs uppercase transition-all duration-500;
+    border: 1px solid rgba(192, 32, 56, 0.5);
+    color: #c02038;
+  }
+
+  .btn-ghost:hover {
+    background: rgba(192, 32, 56, 0.08);
+    border-color: #c02038;
+  }
+
+  .section-label {
+    @apply font-manrope text-xs tracking-widest3 uppercase;
+    color: #c02038;
+  }
+
+  .heading-xl {
+    @apply font-cormorant font-light text-5xl md:text-7xl lg:text-8xl leading-none;
+  }
+
+  .heading-lg {
+    @apply font-cormorant font-light text-4xl md:text-6xl lg:text-7xl leading-none;
+  }
+
+  .heading-md {
+    @apply font-cormorant font-light text-3xl md:text-5xl leading-tight;
+  }
+
+  .body-text {
+    @apply font-manrope font-light text-base leading-relaxed text-charcoal-400;
+  }
+
+  .divider-gold {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #c02038, transparent);
+  }
+}
+
+@layer utilities {
+  .text-shadow-luxury {
+    text-shadow: 0 2px 30px rgba(192, 32, 56, 0.3);
+  }
+
+  .mask-fade-bottom {
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  }
+
+  .mask-fade-right {
+    -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
+    mask-image: linear-gradient(to right, black 60%, transparent 100%);
+  }
+}

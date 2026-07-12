@@ -1,0 +1,263 @@
+{
+  "nav": {
+    "services": "Usługi",
+    "team": "Nasz Zespół",
+    "portfolio": "Portfolio",
+    "pricing": "Cennik",
+    "contact": "Kontakt",
+    "book": "Umów wizytę"
+  },
+  "hero": {
+    "label": "Premium Salon Urody",
+    "headline1": "Odkryj swoje",
+    "headline2": "naturalne piękno",
+    "sub": "Premium zabiegi upiększające stworzone, aby podkreślić Twoją indywidualność.",
+    "cta1": "Umów wizytę",
+    "cta2": "Zobacz usługi",
+    "scroll": "Odkryj więcej"
+  },
+  "journey": {
+    "label": "Wyjątkowe doświadczenie",
+    "title": "Podróż",
+    "subtitle": "transformacji",
+    "stage1": {
+      "tag": "01 — Początek",
+      "text": "Każda transformacja zaczyna się od chwili dla siebie."
+    },
+    "stage2": {
+      "tag": "02 — Konsultacja",
+      "text": "Zrozumienie Ciebie to pierwszy krok do stworzenia idealnego wizerunku."
+    },
+    "stage3": {
+      "tag": "03 — Transformacja",
+      "text": "Małe detale tworzą zupełnie nowe uczucie."
+    },
+    "stage4": {
+      "tag": "04 — Rezultat",
+      "text": "Twoje piękno. Twoja pewność siebie. Twój moment."
+    }
+  },
+  "services": {
+    "label": "Co oferujemy",
+    "title": "Nasze usługi",
+    "subtitle": "Każda usługa to osobisty rytuał stworzony wyłącznie dla Ciebie.",
+    "from": "od",
+    "duration": "min",
+    "items": {
+      "hair_styling": {
+        "name": "Stylizacja włosów",
+        "desc": "Precyzyjne strzyżenie i stylizacja podkreślająca Twoje rysy.",
+        "duration": "60",
+        "price": "89"
+      },
+      "hair_coloring": {
+        "name": "Koloryzacja",
+        "desc": "Wymiarowy kolor tworzony z użyciem premium europejskich pigmentów.",
+        "duration": "120",
+        "price": "149"
+      },
+      "makeup": {
+        "name": "Makijaż artystyczny",
+        "desc": "Od naturalnego blasku po wieczorowe kreacje — każdy pociągnięcie opowiada Twoją historię.",
+        "duration": "60",
+        "price": "79"
+      },
+      "manicure": {
+        "name": "Luksusowy manicure",
+        "desc": "Nienaganny manicure z najlepszymi żelami i nail artem.",
+        "duration": "75",
+        "price": "59"
+      },
+      "pedicure": {
+        "name": "Premium pedicure",
+        "desc": "Kompletny rytuał dla stóp zapewniający relaks i piękno.",
+        "duration": "90",
+        "price": "69"
+      },
+      "facial": {
+        "name": "Pielęgnacja twarzy",
+        "desc": "Zaawansowane zabiegi skórne z medycznymi kosmetykami premium.",
+        "duration": "90",
+        "price": "119"
+      },
+      "brows": {
+        "name": "Stylizacja brwi",
+        "desc": "Architektoniczne kształtowanie brwi transformujące całą twarz.",
+        "duration": "45",
+        "price": "49"
+      },
+      "spa_treatment": {
+        "name": "Zabieg SPA",
+        "desc": "Pełna sensoryczna podróż urody — ciało, umysł i duch.",
+        "duration": "120",
+        "price": "199"
+      }
+    }
+  },
+  "before_after": {
+    "label": "Realne Efekty",
+    "title": "Zobacz",
+    "title2": "transformację",
+    "sub": "Przeciągnij, aby zobaczyć transformację naszych klientek.",
+    "before": "Przed",
+    "after": "Po"
+  },
+  "team": {
+    "label": "Artyści",
+    "title": "Poznaj naszych",
+    "title2": "mistrzów",
+    "sub": "Każdy specjalista to osobista marka — artysta oddany Twojemu wyjątkowemu pięknu.",
+    "experience": "lat doświadczenia",
+    "book": "Umów się z",
+    "members": {
+      "1": {
+        "name": "Sophie Laurent",
+        "role": "Senior Kolorystka",
+        "exp": "9",
+        "specialties": ["Balayage", "Korekta koloru", "Regeneracja"]
+      },
+      "2": {
+        "name": "Mia Rossi",
+        "role": "Makijażystka",
+        "exp": "7",
+        "specialties": ["Makijaż ślubny", "Editorial", "Pielęgnacja skóry"]
+      },
+      "3": {
+        "name": "Lena Vogel",
+        "role": "Fryzjer-Stylista",
+        "exp": "11",
+        "specialties": ["Precyzyjne cięcie", "Stylizacja", "Przedłużanie"]
+      },
+      "4": {
+        "name": "Aria Blanc",
+        "role": "Nail Artist",
+        "exp": "6",
+        "specialties": ["Nail design", "Manicure żelowy", "Przedłużanie paznokci"]
+      }
+    }
+  },
+  "ritual": {
+    "label": "Premium doświadczenie",
+    "title": "Luksusowy",
+    "title2": "rytuał włosów",
+    "sub": "Pięcioetapowa podróż transformująca nie tylko Twoje włosy, ale całe poczucie siebie.",
+    "steps": {
+      "1": { "title": "Konsultacja", "desc": "Zaczynamy od słuchania — Twój styl życia, Twoja wizja, Twoje pragnienia." },
+      "2": { "title": "Przygotowanie", "desc": "Premium organiczne wstępne leczenie odżywiające i chroniące włosy." },
+      "3": { "title": "Zabieg", "desc": "Mistrzowski kolor lub strzyżenie z użyciem wyłącznie elitarnych produktów." },
+      "4": { "title": "Stylizacja", "desc": "Wykończone precyzyjną stylizacją, aby odsłonić Twój nowy look." },
+      "5": { "title": "Zalecenia", "desc": "Osobisty domowy rytuał pielęgnacyjny dla utrzymania transformacji." }
+    },
+    "cta": "Poczuj rytuał"
+  },
+  "portfolio": {
+    "label": "Nasze prace",
+    "title": "Portfolio",
+    "title2": "studia",
+    "sub": "Każde zdjęcie opowiada historię transformacji, pewności siebie i artyzmu.",
+    "categories": ["Wszystkie", "Włosy", "Makijaż", "Paznokcie", "Atmosfera"]
+  },
+  "atmosphere": {
+    "label": "Nasza przestrzeń",
+    "title": "Miejsce, gdzie",
+    "title2": "Ty jesteś na pierwszym miejscu",
+    "sub": "Zwolnij. Oddech. Zajmiemy się wszystkim.",
+    "quote": "Miejsce, gdzie możesz zwolnić i poświęcić czas sobie."
+  },
+  "pricing": {
+    "label": "Inwestycja",
+    "title": "Przejrzysty",
+    "title2": "cennik",
+    "sub": "Każda cena odzwierciedla jakość, czas i artyzm, na jaki zasługuje Twoja transformacja.",
+    "from": "od",
+    "note": "Ostateczna cena zależy od indywidualnych potrzeb i konsultacji.",
+    "cta": "Zobacz pełny cennik"
+  },
+  "gift": {
+    "label": "Podaruj piękno",
+    "title": "Karty",
+    "title2": "podarunkowe",
+    "sub": "Podaruj komuś chwilę piękna. Doświadczenie, którego nigdy nie zapomni.",
+    "amount_label": "Wybierz kwotę",
+    "name_label": "Imię obdarowanego",
+    "name_placeholder": "Wpisz imię obdarowanego",
+    "message_label": "Osobista wiadomość",
+    "message_placeholder": "Napisz serdeczną wiadomość...",
+    "submit": "Zamów certyfikat",
+    "custom": "Własna kwota"
+  },
+  "booking": {
+    "label": "Zarezerwuj swój moment",
+    "title": "Umów",
+    "title2": "wizytę",
+    "sub": "Zrób pierwszy krok ku swojej transformacji. Resztą zajmiemy się my.",
+    "name": "Imię i nazwisko",
+    "name_placeholder": "Twoje imię",
+    "phone": "Numer telefonu",
+    "phone_placeholder": "+48 (000) 000-000",
+    "service": "Usługa",
+    "service_placeholder": "Wybierz usługę",
+    "date": "Preferowana data",
+    "message": "Wiadomość",
+    "message_placeholder": "Wszelkie preferencje lub pytania...",
+    "submit": "Zarezerwuj termin",
+    "whatsapp": "WhatsApp",
+    "or": "lub skontaktuj się bezpośrednio",
+    "success": "Dziękujemy! Skontaktujemy się z Tobą w ciągu 24 godzin w celu potwierdzenia wizyty.",
+    "privacy": "Twoje dane są bezpieczne. Nigdy nie udostępniamy danych osobowych."
+  },
+  "reviews": {
+    "label": "Historie klientek",
+    "title": "Co mówią",
+    "title2": "nasze klientki"
+  },
+  "faq": {
+    "label": "Pytania",
+    "title": "Najczęściej zadawane",
+    "title2": "pytania",
+    "items": {
+      "1": {
+        "q": "Jak długo trwa typowy zabieg?",
+        "a": "Czas trwania zależy od usługi — strzyżenie zajmuje 60 min, koloryzacja 2–3 godziny, a pełne rytuały SPA do 3 godzin. Podamy dokładny szacunek podczas konsultacji."
+      },
+      "2": {
+        "q": "Jak przygotować się do wizyty?",
+        "a": "Przyjedź z czystymi, suchymi włosami na zabiegi stylizacyjne. Przed koloryzacją unikaj ciężkich odżywek przez 24 godziny. Resztą zajmiemy się my."
+      },
+      "3": {
+        "q": "Czy oferujecie bezpłatne konsultacje?",
+        "a": "Tak — wszystkie pierwsze wizyty obejmują bezpłatną 15-minutową konsultację, aby poznać Twoją wizję i zaproponować najlepsze podejście."
+      },
+      "4": {
+        "q": "Jaka jest Wasza polityka anulowania?",
+        "a": "Prosimy o poinformowanie o anulowaniu lub przełożeniu z 24-godzinnym wyprzedzeniem, abyśmy mogli zaproponować Twój termin innemu klientowi."
+      },
+      "5": {
+        "q": "Czy używacie profesjonalnych produktów?",
+        "a": "Wyłącznie. Współpracujemy z premium europejskimi markami, w tym Olaplex, L'Oréal Professionnel, Kerastase i Charlotte Tilbury."
+      }
+    }
+  },
+  "contact": {
+    "label": "Znajdź nas",
+    "title": "Rozpocznij swoją",
+    "title2": "podróż piękna",
+    "address": "ul. Piękna 12, Warszawa",
+    "phone": "+48 123 456 789",
+    "email": "hello@lumiere-studio.com",
+    "hours_title": "Godziny otwarcia",
+    "hours": {
+      "weekdays": "Pon – Pt: 9:00 – 20:00",
+      "saturday": "Sobota: 9:00 – 18:00",
+      "sunday": "Niedziela: 10:00 – 16:00"
+    }
+  },
+  "footer": {
+    "tagline": "Gdzie piękno spotyka się z pewnością siebie.",
+    "navigation": "Nawigacja",
+    "social": "Obserwuj nas",
+    "rights": "Wszelkie prawa zastrzeżone.",
+    "privacy": "Polityka prywatności",
+    "terms": "Regulamin"
+  }
+}

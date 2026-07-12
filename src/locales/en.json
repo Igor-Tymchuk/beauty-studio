@@ -1,0 +1,263 @@
+{
+  "nav": {
+    "services": "Services",
+    "team": "Our Team",
+    "portfolio": "Portfolio",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "book": "Book Appointment"
+  },
+  "hero": {
+    "label": "Premium Beauty Studio",
+    "headline1": "Reveal Your",
+    "headline2": "Natural Beauty",
+    "sub": "Premium beauty treatments created to highlight your individuality.",
+    "cta1": "Book Your Visit",
+    "cta2": "Explore Services",
+    "scroll": "Discover"
+  },
+  "journey": {
+    "label": "Signature Experience",
+    "title": "Beauty Transformation",
+    "subtitle": "Journey",
+    "stage1": {
+      "tag": "01 — Beginning",
+      "text": "Every transformation begins with a moment for yourself."
+    },
+    "stage2": {
+      "tag": "02 — Consultation",
+      "text": "Understanding you is the first step to creating the perfect look."
+    },
+    "stage3": {
+      "tag": "03 — Transformation",
+      "text": "Small details create a completely new feeling."
+    },
+    "stage4": {
+      "tag": "04 — Result",
+      "text": "Your beauty. Your confidence. Your moment."
+    }
+  },
+  "services": {
+    "label": "What We Offer",
+    "title": "Our Services",
+    "subtitle": "Every service is crafted as a personal ritual tailored exclusively for you.",
+    "from": "from",
+    "duration": "min",
+    "items": {
+      "hair_styling": {
+        "name": "Hair Styling",
+        "desc": "Precision cuts and bespoke styling that frame your features perfectly.",
+        "duration": "60",
+        "price": "89"
+      },
+      "hair_coloring": {
+        "name": "Hair Coloring",
+        "desc": "Dimensional color crafted with premium European pigments.",
+        "duration": "120",
+        "price": "149"
+      },
+      "makeup": {
+        "name": "Makeup Art",
+        "desc": "From natural glow to editorial looks — every stroke tells your story.",
+        "duration": "60",
+        "price": "79"
+      },
+      "manicure": {
+        "name": "Luxury Manicure",
+        "desc": "Impeccable nail care with the finest gels and nail art.",
+        "duration": "75",
+        "price": "59"
+      },
+      "pedicure": {
+        "name": "Premium Pedicure",
+        "desc": "A complete foot ritual for total relaxation and beauty.",
+        "duration": "90",
+        "price": "69"
+      },
+      "facial": {
+        "name": "Facial Care",
+        "desc": "Advanced skin treatments with medical-grade skincare products.",
+        "duration": "90",
+        "price": "119"
+      },
+      "brows": {
+        "name": "Brow Design",
+        "desc": "Architectural brow shaping that transforms your entire face.",
+        "duration": "45",
+        "price": "49"
+      },
+      "spa_treatment": {
+        "name": "Spa Treatment",
+        "desc": "A full sensory beauty journey — body, mind and spirit.",
+        "duration": "120",
+        "price": "199"
+      }
+    }
+  },
+  "before_after": {
+    "label": "Real Results",
+    "title": "See the",
+    "title2": "Transformation",
+    "sub": "Drag to reveal the transformation our clients experience.",
+    "before": "Before",
+    "after": "After"
+  },
+  "team": {
+    "label": "The Artists",
+    "title": "Meet Our",
+    "title2": "Masters",
+    "sub": "Each specialist is a personal brand — a dedicated artist devoted to your unique beauty.",
+    "experience": "years experience",
+    "book": "Book with",
+    "members": {
+      "1": {
+        "name": "Sophie Laurent",
+        "role": "Senior Colorist",
+        "exp": "9",
+        "specialties": ["Balayage", "Color Correction", "Hair Treatments"]
+      },
+      "2": {
+        "name": "Mia Rossi",
+        "role": "Makeup Artist",
+        "exp": "7",
+        "specialties": ["Bridal Makeup", "Editorial", "Skincare"]
+      },
+      "3": {
+        "name": "Lena Vogel",
+        "role": "Hair Stylist",
+        "exp": "11",
+        "specialties": ["Precision Cut", "Styling", "Extensions"]
+      },
+      "4": {
+        "name": "Aria Blanc",
+        "role": "Nail Artist",
+        "exp": "6",
+        "specialties": ["Nail Design", "Gel Manicure", "Nail Sculpting"]
+      }
+    }
+  },
+  "ritual": {
+    "label": "Premium Experience",
+    "title": "The Luxury",
+    "title2": "Hair Ritual",
+    "sub": "An immersive five-step journey that transforms not just your hair, but your entire sense of self.",
+    "steps": {
+      "1": { "title": "Consultation", "desc": "We begin by listening — your lifestyle, your vision, your desires." },
+      "2": { "title": "Preparation", "desc": "Premium organic pre-treatment to nourish and protect." },
+      "3": { "title": "Treatment", "desc": "Master-crafted color or cut using only elite European products." },
+      "4": { "title": "Styling", "desc": "Finished with precision styling to reveal your new look." },
+      "5": { "title": "Recommendations", "desc": "Personalized home-care ritual to maintain your transformation." }
+    },
+    "cta": "Experience the Ritual"
+  },
+  "portfolio": {
+    "label": "Our Work",
+    "title": "The",
+    "title2": "Portfolio",
+    "sub": "Each image tells a story of transformation, confidence and artistry.",
+    "categories": ["All", "Hair", "Makeup", "Nails", "Atmosphere"]
+  },
+  "atmosphere": {
+    "label": "Our Space",
+    "title": "A Place Where You",
+    "title2": "Come First",
+    "sub": "Slow down. Breathe. Let us take care of everything.",
+    "quote": "A place where you can slow down and dedicate time to yourself."
+  },
+  "pricing": {
+    "label": "Investment",
+    "title": "Transparent",
+    "title2": "Pricing",
+    "sub": "Every price reflects the quality, time and artistry your transformation deserves.",
+    "from": "from",
+    "note": "Final price depends on individual needs and consultation.",
+    "cta": "View Full Price List"
+  },
+  "gift": {
+    "label": "Give Beauty",
+    "title": "Gift",
+    "title2": "Certificates",
+    "sub": "Give someone a moment of beauty. An experience they will never forget.",
+    "amount_label": "Select Amount",
+    "name_label": "Recipient Name",
+    "name_placeholder": "Enter recipient's name",
+    "message_label": "Personal Message",
+    "message_placeholder": "Write a heartfelt message...",
+    "submit": "Get Certificate",
+    "custom": "Custom amount"
+  },
+  "booking": {
+    "label": "Reserve Your Moment",
+    "title": "Book Your",
+    "title2": "Appointment",
+    "sub": "Take the first step toward your transformation. We'll handle the rest.",
+    "name": "Full Name",
+    "name_placeholder": "Your name",
+    "phone": "Phone Number",
+    "phone_placeholder": "+1 (000) 000-0000",
+    "service": "Service",
+    "service_placeholder": "Select a service",
+    "date": "Preferred Date",
+    "message": "Message",
+    "message_placeholder": "Any preferences or questions...",
+    "submit": "Reserve Your Spot",
+    "whatsapp": "WhatsApp",
+    "or": "or reach us directly",
+    "success": "Thank you! We'll contact you within 24 hours to confirm your appointment.",
+    "privacy": "Your information is safe with us. We never share personal data."
+  },
+  "reviews": {
+    "label": "Client Stories",
+    "title": "What Our Clients",
+    "title2": "Say"
+  },
+  "faq": {
+    "label": "Questions",
+    "title": "Frequently Asked",
+    "title2": "Questions",
+    "items": {
+      "1": {
+        "q": "How long does a typical procedure take?",
+        "a": "Duration varies by service — cuts take 60 min, color 2–3 hours, and full spa rituals up to 3 hours. We'll give you an exact estimate during consultation."
+      },
+      "2": {
+        "q": "How should I prepare for my visit?",
+        "a": "Arrive with clean, dry hair for styling appointments. For color treatments, avoid heavy conditioners 24 hours prior. We handle everything else."
+      },
+      "3": {
+        "q": "Do you offer free consultations?",
+        "a": "Yes — all first appointments include a complimentary 15-minute consultation to understand your vision and recommend the best approach."
+      },
+      "4": {
+        "q": "What is your cancellation policy?",
+        "a": "We kindly ask for 24-hour notice for cancellations or rescheduling so we can offer your slot to another client."
+      },
+      "5": {
+        "q": "Do you use professional-grade products?",
+        "a": "Exclusively. We partner with premium European brands including Olaplex, L'Oréal Professionnel, Kerastase, and Charlotte Tilbury."
+      }
+    }
+  },
+  "contact": {
+    "label": "Find Us",
+    "title": "Start Your",
+    "title2": "Beauty Journey",
+    "address": "12 Rue de la Beauté, Warsaw",
+    "phone": "+48 123 456 789",
+    "email": "hello@lumiere-studio.com",
+    "hours_title": "Working Hours",
+    "hours": {
+      "weekdays": "Mon – Fri: 9:00 – 20:00",
+      "saturday": "Saturday: 9:00 – 18:00",
+      "sunday": "Sunday: 10:00 – 16:00"
+    }
+  },
+  "footer": {
+    "tagline": "Where beauty meets confidence.",
+    "navigation": "Navigation",
+    "social": "Follow Us",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  }
+}
